@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import BertTokenizer, BertForSequenceClassification
+import torch
  # 👈 Add the caching decorator
 @st.cache(allow_output_mutation=True)
 def get_model():
